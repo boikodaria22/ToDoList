@@ -27,7 +27,7 @@
     } else {
       answersFromServer = xhr.response;
       let arr = [];
-			for (let i=0;i <answersFromServer.length;i++) {
+			for (let i=0; i < answersFromServer.length; i++) {
 				arr.push(answersFromServer[i]);
 			};
 			toDoLists.push(
@@ -42,7 +42,7 @@
 
   function createNewElement() {
     let body = document.querySelector('body');
-    for (let i = 0; i < toDoLists.length; i += 1) {
+    for (let i = 0; i < toDoLists.length; i++) {
       let listToDo = document.createElement('div');
       body.appendChild(listToDo);
       let h1 = document.createElement('h1');
