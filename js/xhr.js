@@ -31,7 +31,7 @@
         toDoLists.push(arr.filter(item => item.userId === 6).slice(0, 5));
         (function(toDoLists) {
           let body = document.querySelector('body');
-          for (let i = 0; i < toDoLists.length; i += 1) {
+          for (let i = 0; i < toDoLists.length; i ++) {
             let listToDo = document.createElement('div');
             body.appendChild(listToDo);
             let h1 = document.createElement('h1');
