@@ -1,8 +1,5 @@
 body{
   background-color: rgba(255, 192, 203, 0.444);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height:2000px;
 }
 div{
