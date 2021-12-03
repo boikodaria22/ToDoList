@@ -39,7 +39,7 @@
             let divListToDo = document.createElement('div');
             body.appendChild(divListToDo);
             let titleH2 = document.createElement('h2');
-            divListToDo.appendChild(titleH1)
+            divListToDo.appendChild(titleH2)
             titleH2.innerText = `To-Do List for user № ${toDoLists[i][0].userId}`
             let list = document.createElement('ol');
             divListToDo.appendChild(list)
