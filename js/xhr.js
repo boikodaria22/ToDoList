@@ -33,7 +33,7 @@
         toDoLists.push(arr.filter(item => item.userId === 2).slice(0, 5));
         toDoLists.push(arr.filter(item => item.userId === 4).slice(0, 5));
         toDoLists.push(arr.filter(item => item.userId === 6).slice(0, 5));
-        (function(toDoLists) {
+        (function() {
           let body = document.querySelector('body');
           for (let i = 0; i < toDoLists.length; i ++) {
             let listToDo = document.createElement('div');
@@ -52,7 +52,7 @@
               inp.value = `${toDoLists[i][j].title}`
             }
           }
-        })(toDoLists)
+        })()
       }
     }
   }
