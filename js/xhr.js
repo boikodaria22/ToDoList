@@ -1,12 +1,14 @@
   function responseServer() {
     const requestURL = 'https://jsonplaceholder.typicode.com/todos'
     const xhr = new XMLHttpRequest
-      //let answersFromServer
-      //let toDoLists 
+
     xhr.open('GET', requestURL)
+
     xhr.setRequestHeader('Content-Type', 'application/json')
     xhr.responseType = 'json'
+
     xhr.send()
+
     xhr.onload = function(event) {
       if (this.status !== 200) {
         console.log('Провал')
@@ -14,9 +16,11 @@
         console.log('Успешно')
       }
     }
+
     xhr.onerror = () => {
       console.log('Error')
     }
+
     xhr.onreadystatechange = function(event) {
       if (event.target.readyState === 4 &&
         event.target.status === 200) {
