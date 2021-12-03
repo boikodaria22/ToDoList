@@ -35,7 +35,7 @@ li{
 }
 input{
   border:none;
-  width: 80%;
+  width: 90%;
   background-color: rgba(0, 149, 255, 0);
   color:white;
   font-size: 30px;
@@ -98,7 +98,6 @@ ol{
  }
   input{
       font-size: 14px;
-      width: 70%;
  }
   h2{
       padding: 15px;
@@ -117,7 +116,6 @@ ol{
  }
   input{
       font-size: 14px;
-      width: 70%;
  }
   h2{
       padding: 15px;
@@ -135,13 +133,11 @@ ol{
 
   input{
       font-size: 14px;
-      width: 65%;
  }
 
 }
 @media (max-width: 345px) {
   input{
       font-size: 14px;
-      width: 60%;
  }
 }
