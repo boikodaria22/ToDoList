@@ -25,24 +25,24 @@
       if (event.target.readyState === 4 &&
         event.target.status === 200) {
         let answersFromServer = xhr.response;
-        let arr = []
+        let arrWithAnswer = []
         let toDoLists = [];
         for (let i = 0; i < answersFromServer.length; i++) {
-          arr.push(answersFromServer[i])
+          arrWithAnswer.push(answersFromServer[i])
         };
-        toDoLists.push(arr.filter(item => item.userId === 2).slice(0, 5));
-        toDoLists.push(arr.filter(item => item.userId === 4).slice(0, 5));
-        toDoLists.push(arr.filter(item => item.userId === 6).slice(0, 5));
+        toDoLists.push(arrWithAnswer.filter(item => item.userId === 2).slice(0, 5));
+        toDoLists.push(arrWithAnswer.filter(item => item.userId === 4).slice(0, 5));
+        toDoLists.push(arrWithAnswer.filter(item => item.userId === 6).slice(0, 5));
         (function() {
           let body = document.querySelector('body');
           for (let i = 0; i < toDoLists.length; i ++) {
-            let listToDo = document.createElement('div');
-            body.appendChild(listToDo);
-            let h1 = document.createElement('h1');
-            listToDo.appendChild(h1)
-            h1.innerText = `To-Do List for user № ${toDoLists[i][0].userId}`
+            let divListToDo = document.createElement('div');
+            body.appendChild(divListToDo);
+            let titleH1 = document.createElement('h1');
+            divListToDo.appendChild(titleH1)
+            titleH1.innerText = `To-Do List for user № ${toDoLists[i][0].userId}`
             let list = document.createElement('ol');
-            listToDo.appendChild(list)
+            divListToDo.appendChild(list)
             for (let j = 0; j < toDoLists[i].length; j++) {
               let li = document.createElement('li');
               list.appendChild(li)
