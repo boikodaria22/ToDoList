@@ -38,9 +38,9 @@
           for (let i = 0; i < toDoLists.length; i ++) {
             let divListToDo = document.createElement('div');
             body.appendChild(divListToDo);
-            let titleH1 = document.createElement('h1');
+            let titleH2 = document.createElement('h2');
             divListToDo.appendChild(titleH1)
-            titleH1.innerText = `To-Do List for user № ${toDoLists[i][0].userId}`
+            titleH2.innerText = `To-Do List for user № ${toDoLists[i][0].userId}`
             let list = document.createElement('ol');
             divListToDo.appendChild(list)
             for (let j = 0; j < toDoLists[i].length; j++) {
